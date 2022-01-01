@@ -5,6 +5,8 @@ Sorry, the readme.file is under construction...
 This is my first MERN fullstack blog. 
 (Of course, MERN means MongoDB / Express / React / Node.js).
 
+The blog is for desktop / tablet / mobile phone screen (responsive).
+
 ## Demo
 
 https://hirosdev-mern-blog.netlify.app/
