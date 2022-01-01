@@ -43,7 +43,7 @@ I had to learn Mongoose(MongoDB).
 I am a 100% self-taught programmer. And I have been studying programming about one year ago.
 So, in fact, it took about one year to complete the project for me.
 
-<h2>Most challenging part for me, to create Authentication / Authorization system with JWT.</h2>
+<h4>Most challenging part for me, to create Authentication / Authorization system with JWT.</h4>
 
 Because I couldn't understand an advantage of JWT and why so many people want to use JWT.
 
