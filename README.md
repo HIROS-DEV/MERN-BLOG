@@ -31,7 +31,7 @@ In admin user route, admin user can do everything. Admin user can create new blo
 
 ## Feedback of the project
 
-It took about two weeks to write code actually.
+It took about two weeks to write code.
 But, in fact, to complete the project, I had to learn many things.
 
 I had to learn HTML/CSS/JavaScript fundamentals.
@@ -43,7 +43,7 @@ I had to learn Mongoose(MongoDB).
 I am a 100% self-taught programmer. And I have been studying programming about one year ago.
 So, in fact, it took about one year to complete the project for me.
 
-Most challenging part for me, to create Authentication / Authorization system with JWT.
+<h2>Most challenging part for me, to create Authentication / Authorization system with JWT.</h2>
 
 Because I couldn't understand an advantage of JWT and why so many people want to use JWT.
 
