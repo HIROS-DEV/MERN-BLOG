@@ -22,7 +22,10 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: ['http://localhost:3000'],
+		origin: [
+			'http://localhost:3000',
+			'https://hirosdev-mern-blog.netlify.app',
+		],
 		credentials: true,
 	})
 );

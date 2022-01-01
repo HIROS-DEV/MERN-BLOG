@@ -118,6 +118,7 @@ exports.loginUser = async (req, res, next) => {
 		res.cookie('refreshToken', refreshToken, {
 			httpOnly: true,
 			path: '/api/auth/refresh_token',
+			secure: process.env.NODE_ENV !== 'development',
 		});
 
 		res.status(200).json({
@@ -184,6 +185,7 @@ exports.refreshToken = async (req, res, next) => {
 		res.cookie('refreshToken', refreshToken, {
 			httpOnly: true,
 			path: '/api/auth/refresh_token',
+			secure: process.env.NODE_ENV !== "development"
 		});
 
 		res.status(200).json({

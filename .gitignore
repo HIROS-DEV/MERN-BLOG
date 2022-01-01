@@ -12,6 +12,7 @@ rest.http
 
 # production
 /build
+build/
 
 # misc
 .DS_Store
