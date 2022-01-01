@@ -1,3 +1,5 @@
+Sorry, readme file is under construction...
+
 # MERN-BLOG
 
 This is  MERN fullstack blog. 
@@ -26,6 +28,11 @@ In normal user route, user can read all blogs and post a comments. Of course, th
 In admin user route, admin user can do everything. Admin user can create new blog post, update past post, delete post, add comments, delete comments(even if the comments wrote the other user!!)
 
 ## Feedback of the project
+
+Most difficult part for me, obviously creating of Authentication and Authorization system.
+Because I don't know why many people use JSON WEB TOKEN.
+I think (I am thinking) that JSON WEB TOKEN has vulnerability for security.
+
 
 ## If you want to challenge yourself...
 
