@@ -1,0 +1,12 @@
+@use './spaces';
+@use './fonts';
+
+$headerWidth: 100%;
+$headerHeight: 7vh;
+
+@mixin card {
+	border-radius: 6px;
+	-webkit-box-shadow: 5px 5px 9px 3px
+		rgba(153, 153, 153, 0.33);
+	box-shadow: 5px 5px 9px 3px rgba(153, 153, 153, 0.33);
+}

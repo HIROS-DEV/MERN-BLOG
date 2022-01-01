@@ -1,0 +1,118 @@
+@use './spaces';
+
+header {
+	@media screen and (max-width: 900px) {
+		.header__desktopUL {
+			display: none;
+			opacity: 0;
+		}
+		.header__responsiveUL {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			opacity: 1;
+
+			li {
+				a,
+				i {
+					font-size: 1.5em;
+					text-align: center;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 280px) {
+		.header__responsiveUL {
+			li {
+				a,
+				i {
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
+
+main {
+	@media screen and (max-width: 900px) {
+		.main__article {
+			.main__card {
+				display: block;
+			}
+		}
+		.main__articles {
+			.main__cards {
+				display: flex;
+				flex-direction: column;
+				div {
+					grid-column: span 12;
+				}
+			}
+		}
+	}
+}
+
+.sticky {
+	@media screen and (max-width: 900px) {
+		margin: 0;
+		i {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.login {
+	@media screen and (max-width: 600px) {
+		h1 {
+			max-width: 300px;
+		}
+		form {
+			max-width: 300px;
+		}
+	}
+	@media screen and (max-width: 280px) {
+		h1 {
+			max-width: 250px;
+		}
+		form {
+			max-width: 250px;
+		}
+	}
+}
+
+.article__comments {
+	form {
+		@media screen and (max-width: 900px) {
+			.ck.ck-toolbar__items {
+				font-size: 0.7em;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.ck.ck-toolbar__items {
+				font-size: 0.5em;
+			}
+		}
+
+		@media screen and (max-width: 500px) {
+			.ck {
+				display: none;
+				opacity: 0;
+			}
+			label {
+				padding: 15px 0;
+			}
+			textarea {
+				display: block;
+				opacity: 1;
+			}
+		}
+	}
+	@media screen and (max-width: 280px) {
+		form {
+			margin: 0 spaces.$margin-exsmall;
+			padding: 0;
+		}
+	}
+}

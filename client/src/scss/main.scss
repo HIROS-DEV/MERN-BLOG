@@ -1,0 +1,15 @@
+@use './index';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.app {
+	position: relative;
+}

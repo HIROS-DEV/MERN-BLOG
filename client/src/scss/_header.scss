@@ -1,0 +1,115 @@
+@use './fonts';
+@use './spaces';
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 30vh;
+	color: white;
+	background: url('https://d33wubrfki0l68.cloudfront.net/2c537ad1869598083d807a37f73ae9a66d2da339/200b5/blog/globe.svg'),
+		radial-gradient(
+			37.86% 77.79% at 50% 100%,
+			rgba(113, 128, 150, 0.25) 0%,
+			rgba(113, 128, 150, 0) 100%
+		),
+		linear-gradient(
+			rgb(26, 32, 44) 0%,
+			rgb(45, 55, 72) 100%
+		),
+		linear-gradient(
+			rgb(13, 15, 20) 0%,
+			rgba(27, 32, 43, 0) 100%
+		),
+		rgb(47, 55, 71);
+
+	.header__responsiveUL {
+		display: none;
+		opacity: 0;
+	}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+		width: 100%;
+
+		.header__logoWrapper {
+			li:nth-child(1) {
+				padding-right: 0px;
+			}
+			li:nth-child(2) {
+				padding-left: spaces.$padding-small;
+			}
+		}
+
+		.header__create{
+			display: none;
+			opacity: 0;
+
+			&.visible {
+				
+			}
+		}
+		div {
+			display: flex;
+			&.header__center {
+				flex-direction: column;
+				text-align: center;
+
+				h1 {
+					font-size: 4em;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 1.2em;
+					font-weight: lighter;
+					opacity: 0.9;
+				}
+			}
+			.logoutBtn {
+				cursor: pointer;
+			}
+			li {
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-transform: uppercase;
+				padding: 0 spaces.$padding-normal;
+			}
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		.header__desktopUL {
+			display: none;
+			opacity: 0;
+		}
+		.header__responsiveUL {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			opacity: 1;
+
+			li {
+				a,
+				i {
+					font-size: 1.5em;
+					text-align: center;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 280px) {
+		.header__responsiveUL {
+			li {
+				a,
+				i {
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}

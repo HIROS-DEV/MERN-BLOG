@@ -1,0 +1,167 @@
+@use './fonts';
+@use './spaces';
+@use './mixin';
+
+$mainHeaderText: 1.2em;
+$mainHeaderTextLinHeight: 1.8em;
+
+main {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+	.main__header {
+		padding-bottom: spaces.$margin-normal;
+		grid-column: span 12;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: url(https://d33wubrfki0l68.cloudfront.net/2c537ad1869598083d807a37f73ae9a66d2da339/200b5/blog/globe.svg)
+				center -50px / cover no-repeat,
+			radial-gradient(
+				37.86% 77.79% at 50% 100%,
+				rgba(113, 128, 150, 0.25) 0%,
+				rgba(113, 128, 150, 0) 100%
+			),
+			linear-gradient(
+				rgb(26, 32, 44) 0%,
+				rgb(45, 55, 72) 100%
+			),
+			linear-gradient(
+				rgb(13, 15, 20) 0%,
+				rgba(27, 32, 43, 0) 100%
+			),
+			rgb(47, 55, 71);
+
+		h1 {
+			text-transform: uppercase;
+			font-size: 4em;
+			color: fonts.$color-primary;
+		}
+
+		p {
+			margin-top: spaces.$margin-large;
+			text-align: center;
+			color: fonts.$color-primary;
+			font-weight: fonts.$fontLight;
+			font-size: $mainHeaderText;
+		}
+	}
+
+	.main__article {
+		grid-column: 2 / -2;
+		margin: spaces.$margin-normal 0;
+		@include mixin.card;
+
+		.main__card {
+			display: flex;
+			cursor: pointer;
+
+			div {
+				flex: 6;
+			}
+
+			div:nth-child(1) {
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			div:nth-child(2) {
+				padding: spaces.$padding-normal;
+
+				& > * {
+					padding: spaces.$padding-small 0;
+				}
+
+				h3 {
+					color: fonts.$color-tertiary;
+					font-weight: fonts.$fontMedium;
+				}
+
+				h1 {
+					font-size: 2em;
+					overflow-x: auto;
+					white-space: pre-wrap;
+					word-wrap: break-word;
+				}
+
+				p {
+					color: fonts.$color-quaternary;
+					font-weight: fonts.$fontLight;
+					opacity: 0.5;
+				}
+
+				h2 {
+					height: 100px;
+					color: fonts.$color-quaternary;
+					font-size: 1.3em;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					overflow-wrap: break-word;
+					display: -webkit-box;
+					-webkit-line-clamp: 3;
+					-webkit-box-orient: vertical;
+				}
+			}
+		}
+	}
+
+	.main__articles {
+		grid-column: span 12;
+		grid-column: 2 / -2;
+
+		.main__cards {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			gap: 30px;
+			padding: spaces.$padding-large 0;
+
+			div {
+				grid-column: span 4;
+				display: flex;
+				flex-direction: column;
+				cursor: pointer;
+				@include mixin.card;
+
+				div {
+					padding: spaces.$padding-normal;
+					height: 100%;
+					& > * {
+						margin: spaces.$margin-exsmall 0;
+					}
+					h1 {
+						font-size: 1.2em;
+						overflow-x: auto;
+						white-space: pre-wrap;
+						word-wrap: break-word;
+					}
+
+					p {
+						color: fonts.$color-quaternary;
+						font-weight: fonts.$fontLight;
+						opacity: 0.5;
+					}
+
+					h2 {
+						color: fonts.$color-quaternary;
+						font-size: 1em;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-line-clamp: 3;
+						-webkit-box-orient: vertical;
+					}
+				}
+
+				img {
+					border-top-left-radius: 6px;
+					border-top-right-radius: 6px;
+					height: 300px;
+				}
+			}
+		}
+	}
+}

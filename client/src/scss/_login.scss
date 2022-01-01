@@ -1,0 +1,137 @@
+@use './spaces';
+
+.login {
+	margin: spaces.$margin-normal;
+	h1 {
+		margin: spaces.$margin-normal auto;
+		max-width: 500px;
+		text-align: center;
+	}
+	form {
+		margin: 0 auto;
+		max-width: 500px;
+		min-height: 450px;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid silver;
+		border-radius: 6px;
+		-webkit-box-shadow: 5px 5px 9px 3px
+			rgba(153, 153, 153, 0.33);
+		box-shadow: 5px 5px 9px 3px rgba(153, 153, 153, 0.33);
+
+		& > input,
+		button {
+			padding: spaces.$padding-normal;
+			margin: spaces.$padding-small;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		.login__errorMsg {
+			color: crimson;
+			text-align: center;
+			font-size: 1.3em;
+		}
+
+		.login__successMsg {
+			color: cadetblue;
+			text-align: center;
+			font-size: 1.3em;
+		}
+
+		button {
+			cursor: pointer;
+			color: white;
+			background-color: black;
+			border: none;
+		}
+
+		.login__btn {
+			background-color: cadetblue;
+		}
+
+		.login__register {
+			text-align: center;
+			padding: spaces.$margin-small;
+			span {
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.register {
+	margin: spaces.$margin-normal;
+	h1 {
+		margin: spaces.$margin-normal auto;
+		max-width: 500px;
+		text-align: center;
+	}
+	form {
+		margin: 0 auto;
+		max-width: 500px;
+		min-height: 450px;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid silver;
+		border-radius: 6px;
+		-webkit-box-shadow: 5px 5px 9px 3px
+			rgba(153, 153, 153, 0.33);
+		box-shadow: 5px 5px 9px 3px rgba(153, 153, 153, 0.33);
+
+		& > input,
+		button {
+			padding: spaces.$padding-normal;
+			margin: spaces.$padding-small;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		.register__errorMsg {
+			color: crimson;
+			text-align: center;
+			font-size: 1.3em;
+		}
+
+		.register__successMsg {
+			color: cadetblue;
+			text-align: center;
+			font-size: 1.3em;
+		}
+
+		button {
+			cursor: pointer;
+			color: white;
+			background-color: black;
+			border: none;
+		}
+
+		.register__btn {
+			background-color: cadetblue;
+		}
+
+		.register__login {
+			text-align: center;
+			padding: spaces.$margin-small;
+			span {
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

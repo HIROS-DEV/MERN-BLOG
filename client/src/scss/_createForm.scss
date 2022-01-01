@@ -1,0 +1,74 @@
+@use './spaces';
+
+.create__article {
+	& > div {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+	form {
+		margin: 50px 0;
+		padding: spaces.$padding-normal;
+		gap: 20px;
+		grid-column: 2 / 12;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid silver;
+		border-radius: 6px;
+		-webkit-box-shadow: 5px 5px 9px 3px
+			rgba(153, 153, 153, 0.33);
+		box-shadow: 5px 5px 9px 3px rgba(153, 153, 153, 0.33);
+
+		& > input,
+		textarea,
+		button {
+			padding: spaces.$padding-normal;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		label {
+			text-transform: capitalize;
+		}
+
+		span {
+			color: crimson;
+		}
+
+		.article__image {
+			height: auto;
+		}
+
+		textarea {
+			resize: vertical;
+			overflow: auto;
+			min-height: 300px;
+		}
+
+		button {
+			cursor: pointer;
+			color: white;
+			border: none;
+		}
+
+		.article__errorMsg {
+			font-size: 1.3em;
+			color: crimson;
+			text-align: center;
+		}
+
+		.article__successMsg {
+			font-size: 1.3em;
+			color: cadetblue;
+			text-align: center;
+		}
+
+		.article__post {
+			background-color: cadetblue;
+		}
+		.article__clear {
+			background-color: #5a6368;
+		}
+	}
+}
