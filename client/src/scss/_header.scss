@@ -7,7 +7,7 @@ header {
 	align-items: center;
 	width: 100%;
 	min-height: 30vh;
-	color: white;
+	color: white !important;
 	background: url('https://d33wubrfki0l68.cloudfront.net/2c537ad1869598083d807a37f73ae9a66d2da339/200b5/blog/globe.svg'),
 		radial-gradient(
 			37.86% 77.79% at 50% 100%,
@@ -46,10 +46,6 @@ header {
 		.header__create{
 			display: none;
 			opacity: 0;
-
-			&.visible {
-				
-			}
 		}
 		div {
 			display: flex;

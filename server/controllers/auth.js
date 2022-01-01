@@ -97,7 +97,11 @@ exports.loginUser = async (req, res, next) => {
 		}
 
 		const accessToken = sign(
-			{ id: user.id, userType: user.userType, username: user.username },
+			{
+				id: user.id,
+				userType: user.userType,
+				username: user.username,
+			},
 			ACCESS_TOKEN_SECRET,
 			{ expiresIn: '15m' }
 		);
@@ -118,7 +122,11 @@ exports.loginUser = async (req, res, next) => {
 		res.cookie('refreshToken', refreshToken, {
 			httpOnly: true,
 			path: '/api/auth/refresh_token',
-			secure: process.env.NODE_ENV !== 'development',
+			sameSite:
+				process.env.NODE_ENV === 'production'
+					? 'none'
+					: 'lax',
+			secure: process.env.NODE_ENV === 'production',
 		});
 
 		res.status(200).json({
@@ -134,6 +142,11 @@ exports.logoutUser = async (req, res, next) => {
 	try {
 		res.clearCookie('refreshToken', {
 			path: '/api/auth/refresh_token',
+			sameSite:
+				process.env.NODE_ENV === 'production'
+					? 'none'
+					: 'lax',
+			secure: process.env.NODE_ENV === 'production',
 		});
 
 		res
@@ -185,7 +198,11 @@ exports.refreshToken = async (req, res, next) => {
 		res.cookie('refreshToken', refreshToken, {
 			httpOnly: true,
 			path: '/api/auth/refresh_token',
-			secure: process.env.NODE_ENV !== "development"
+			sameSite:
+				process.env.NODE_ENV === 'production'
+					? 'none'
+					: 'lax',
+			secure: process.env.NODE_ENV === 'production',
 		});
 
 		res.status(200).json({

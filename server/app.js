@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan('dev'));
 app.use(cookieParser());
+app.set('trust proxy', 1);
 app.use(
 	cors({
 		origin: [
