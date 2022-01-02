@@ -69,9 +69,9 @@ But, at least as of today, I am thinking that JWT is not special power.
 On the contrary, JWT will be cause severe security problems in the future.
 
 (It is difficult for me to understand how to use JWT. If readers are in same conditions, please check under contents. It is very helpful for me to understand JWT.
-FreeCodeCamp JWT video: https://www.youtube.com/watch?v=x5gLL8-M9Fo
-Authentication Using JWT and Refresh Token:https://medium.com/swlh/authentication-using-jwt-and-refresh-token-part-1-aca5522c14c8
-Why JWTs Suck as Session Tokens:https://developer.okta.com/blog/2017/08/17/why-jwts-suck-as-session-tokens)
+<h3>FreeCodeCamp JWT video: https://www.youtube.com/watch?v=x5gLL8-M9Fo</h3>
+<h3>Authentication Using JWT and Refresh Token:https://medium.com/swlh/authentication-using-jwt-and-refresh-token-part-1-aca5522c14c8</h3>
+<h3>Why JWTs Suck as Session Tokens:https://developer.okta.com/blog/2017/08/17/why-jwts-suck-as-session-tokens</h3> )
 
 ## If you want to challenge yourself...
 
