@@ -1,5 +1,3 @@
-Sorry, the readme file under construction...
-
 # MERN-BLOG
 
 This is my first MERN stack blog. 
@@ -43,23 +41,37 @@ I had to learn Mongoose(MongoDB).
 I am a 100% self-taught programmer. And I have been studying programming about one year ago.
 So, in fact, it took about one year to complete the project for me.
 
-<strong>Most challenging part for me, to create Authentication / Authorization system with JWT.</strong>
+Most challenging part for me, to create Authentication / Authorization system with JWT.
 
 Because I couldn't understand an advantage of JWT and why so many people want to use JWT.
 
 It was easy for me to understand JWT's concept.
-JWT took information about users from backend and store in frontend. 
-Therefore, it is easy to use user's info for Authentication or Authorization without burdening server.
+JWT is took information about users from backend and stored in frontend. 
+Therefore, it is easy to use user's information for Authentication or Authorization without burdening on server(like MongoDB).
 
 It is very simple concept. And I loved it.
 But..., is it real?
-
 The more I studied about JWT, the more unclear.
-Because, even if user's info store in JWT in the frontend, the data have to be checked whether the data is real or not.
-It means JWT have to transmit data to server like a MONGODB, and it means burdening server after all, isn't it?
+
+Because, even if user's information stored in JWT in the frontend, the data have to be checked whether the data is real or not, isn't it?
+It means JWT have to transmit data to server, and it means burden on server after all, isn't it?
 
 In addition, I thought (in fact I am thinking even now) that JWT has vulnerability for security.
-Because JWT has been user's info in the front end, and anybody can read the information.
+Because JWT has been user's information in the front end, and anybody can read the information.
+So, programmer have to be careful how to handle JWT, and after all, programmer have to invented very complicated method like Access Token / Refresh Token instead of just using plain JWT.(In addition, in real world application,  Access Token / Refresh Token is being used with Redis...?)
+
+I think it is not necessary steps if I use traditional way like session and cookies.
+It is more secure and easy way for me(And maybe for many programmers).
+
+Of course, I am junior level developer.
+So, it might just be that I don't have adequate skills.(And of course, I know I have to learn more)
+But, at least as of today, I am thinking that JWT is not special power.
+On the contrary, JWT will be cause severe security problems in the future.
+
+(It is difficult for me to understand how to use JWT. If readers are in same conditions, please check under contents. It is very helpful for me to understand JWT.
+FreeCodeCamp JWT video: https://www.youtube.com/watch?v=x5gLL8-M9Fo
+Authentication Using JWT and Refresh Token:https://medium.com/swlh/authentication-using-jwt-and-refresh-token-part-1-aca5522c14c8
+Why JWTs Suck as Session Tokens:https://developer.okta.com/blog/2017/08/17/why-jwts-suck-as-session-tokens)
 
 ## If you want to challenge yourself...
 
