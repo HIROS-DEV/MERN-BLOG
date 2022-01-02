@@ -81,14 +81,16 @@ It is very helpful for me to understand JWT.
 
 ## Notice
 
-1. If you want to test my MERN blog site, please sign in and login. If so, you can create comment as a normal user.
+1. If you want to test my MERN blog site, please signin and login. If so, you can create comment as a normal user.
 2. If you want to login as admin user, please use this user name and password.
 
 <h4>email: admin@gmail.com</h4>
 <h4>password: admin123</h4>
 
-3.I know I don't need to upload gulpfile and scss file on github when programmers used SASS. But, I want to show my skill.
+3.I know I don't need to upload gulpfile and scss file on github when programmers used SASS. But, I would like to show my skill.
 So, I deliberately upload these files.
+
+4. The server side has been deploy in Heroku. So, it will take some time when if you connect the my MERN blog.
 
 ## If you want to challenge yourself...
 
